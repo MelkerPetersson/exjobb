@@ -19,7 +19,7 @@ When you initiate a company search, this workflow will be followed to systematic
 ### Before Starting Any Work:
 1. **Always pull latest changes first:**
    ```bash
-   git pull origin main
+   git pull exjobb master
    ```
    This ensures you have the most recent company data and workflow updates.
 
@@ -47,7 +47,7 @@ When you initiate a company search, this workflow will be followed to systematic
 
 3. **Push changes to remote:**
    ```bash
-   git push origin main
+   git push exjobb master
    ```
 
 ### When to Commit & Push:
@@ -256,7 +256,7 @@ When you initiate a company search, this workflow will be followed to systematic
 User: "Search for thesis companies in Asia focusing on fintech and cybersecurity"
 
 Assistant Steps:
-0. Pull latest changes: git pull origin main
+0. Pull latest changes: git pull exjobb master
 1. Perform web searches for Asian fintech/cybersecurity companies
 2. Identify 15-25 potential companies
 3. Launch 3-5 specialized agents to research companies in parallel
@@ -269,7 +269,7 @@ Assistant Steps:
 10. Commit and push changes:
     git add potential_companies.md research_workflow.md
     git commit -m "Updated company research: Added 12 Asian fintech companies"
-    git push origin main
+    git push exjobb master
 ```
 
 ---
