@@ -12,6 +12,60 @@ When you initiate a company search, this workflow will be followed to systematic
 - `target_companies.txt` - Lists requirements and desired attributes for companies
 - `potential_companies.md` - The master list where all researched companies are documented
 
+## Git Workflow
+
+**IMPORTANT: This repository is version controlled with git. Follow these steps for every session:**
+
+### Before Starting Any Work:
+1. **Always pull latest changes first:**
+   ```bash
+   git pull origin main
+   ```
+   This ensures you have the most recent company data and workflow updates.
+
+2. Check git status to see current state:
+   ```bash
+   git status
+   ```
+
+### After Making Changes:
+1. **Review changes made:**
+   ```bash
+   git diff
+   git status
+   ```
+
+2. **Stage and commit changes:**
+   ```bash
+   git add potential_companies.md research_workflow.md
+   git commit -m "Updated company research: [brief description of changes]"
+   ```
+   Example commit messages:
+   - "Updated company research: Added 15 African companies with 2024-2026 data"
+   - "Updated company research: Enhanced Safaricom and MTN with latest security incidents"
+   - "Updated workflow: Added git instructions"
+
+3. **Push changes to remote:**
+   ```bash
+   git push origin main
+   ```
+
+### When to Commit & Push:
+- After completing a full research session (new companies added)
+- After updating existing company information
+- After modifying workflow or configuration files
+- Before ending the session (to save progress)
+
+### Commit Message Format:
+- Start with "Updated company research:" for company data changes
+- Start with "Updated workflow:" for workflow/process changes
+- Include specific details: region, number of companies, or type of update
+- Keep messages concise but descriptive
+
+**Note:** These git operations ensure that research progress is saved across sessions and that you always work with the latest information.
+
+---
+
 ## Workflow Steps
 
 ### 1. Initial Search Phase
@@ -202,6 +256,7 @@ When you initiate a company search, this workflow will be followed to systematic
 User: "Search for thesis companies in Asia focusing on fintech and cybersecurity"
 
 Assistant Steps:
+0. Pull latest changes: git pull origin main
 1. Perform web searches for Asian fintech/cybersecurity companies
 2. Identify 15-25 potential companies
 3. Launch 3-5 specialized agents to research companies in parallel
@@ -211,6 +266,10 @@ Assistant Steps:
 7. Document companies in appropriate tiers with fit assessments
 8. Add summary statistics
 9. Update region tracking in this workflow document
+10. Commit and push changes:
+    git add potential_companies.md research_workflow.md
+    git commit -m "Updated company research: Added 12 Asian fintech companies"
+    git push origin main
 ```
 
 ---
