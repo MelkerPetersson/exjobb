@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:flutterwave.com)",
+      "WebFetch(domain:www.africa.engineering.cmu.edu)",
+      "WebFetch(domain:www.safaricom.co.ke)",
+      "WebFetch(domain:seacom.com)",
+      "WebFetch(domain:interswitchgroup.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
